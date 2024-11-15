@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <title>Rapport</title>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <section class="logo">
+                <a href="accueil.html"><span>K</span>Dou</a>
+            </section>
+            <section class="menu">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="mission1.html">Mission 1</a></li>
+                    <li class="active"><a href="mission2.html">Mission 2</a></li>
+                    <li><a href="mission3.html">Mission 3</a></li>
+                    <li><a href="Conclusion.html">Conclusion</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+
+    <h1>Mission 2</h1>
+    <h2 class="soustitre"> Contexte:</h2>
+    <p>
+        Dans la mission 2, l'objectif était de commencer à bien exploiter la base de données de Kdou Business et comprendre le lien entre les tables à partir de l'interface QBE (Query By Example).
+        QBE est une interface low code permettant l'exécution de requêtes SQL sous forme de tableau et de schéma de tables. Cela permet d'avoir un aspect visuel sur
+        les liens des tables, comment sont-elles reliées ? Par quoi ? etc'. Il permet ensuite d'afficher le résultat sous forme SQL et donc cela nous apprend avec
+        la pratique à quoi correspond chaque commande comme par exemple la catégorie critères qui correspond au WHERE en SQL. Nous avons mis quelques requête que nous avons effectuer dans cette mission.
+    </p>
+    
+    <h2 class="soustitre"> Indicateurs:</h2>
+    <section>
+        
+
+        <article class="block">
+            <h3 class="tempotitle">-Les produits d’Italie ou d’Allemagne vendus 50€ ou moins. On veut les 
+                connaître noms et prix, nom du fournisseur, ville et pays d’origine.</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission2/C resultat.png" alt="Image qbe n°3" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission2/c.png" alt="qbe ou sql" class="image-QBE">
+            </div>
+            <p class="description-img">Ce type de requête est utile dans une étude par exemple du marché allemand et italien pour voir les 
+            entreprises implantées et leurs produits. en fonction d'un prix minimum.</p>
+        </article>
+
+
+        <article class="block">
+            <h3 class="tempotitle">-L’offre de produits suédois.</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission2/G resultat.png" alt="Image qbe n°3" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission2/G.png" alt="qbe ou sql" class="image-QBE">
+            </div>
+            <p class="description-img">Ce type de requête est utile pour voir tous les produit d'un pays donné.</p>
+        </article>
+
+        <article class="block">
+            <h3 class="tempotitle">-Les produits (nom, catégorie et prix) à commander par le client Mikal Pavbo.</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission2/H resultat.png" alt="Image qbe n°4" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission2/H.png" alt="qbe ou sql" class="image-QBE">
+            </div>
+            <p class="description-img">Il n’y a pas de client se nommant Mikal Pavbo, mais le client Mikal Torin a 
+            pour code client Pavbo. Nous avons donc pris ce client comme référence. Nous avons aussi décidé de mettre un extrait du résultat pour des raisons de design.</p>
+        </article>
+
+        <article class="block">
+            <h3 class="tempotitle">-Le prix moyen de vente des produits, le prix minimum et le prix maximum.</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission2/J resultat.png" alt="Image qbe n°3" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission2/J.png" alt="qbe ou sql" class="image-QBE">
+            </div>
+            <p class="description-img">Cette requête peut etre un indicateur utile pour des études de statistiques ou autre.</p>
+        </article>
+
+        <article class="block">
+            <h3 class="tempotitle">-Les produits conditionnés dans du carton ou dans du verre.</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission2/L resultat.png" alt="Image qbe n°3" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission2/L.png" alt="qbe ou sql" class="image-QBE">
+            </div>
+            <p class="description-img">Ce type de requête est utile dans la démarche écologique et aider à savoir comment recycler les produits que Kdou reçoit.</p>
+        </article>
+
+
+        <article class="block">
+            <h3 class="tempotitle">-Le chiffre d’affaire total généré avec les informations dont on dispose.</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission2/N resultat.png" alt="Image qbe n°3" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission2/N.png" alt="qbe ou sql" class="image-QBE">
+            </div>
+            <p class="description-img">Cette requête peut etre un indicateur utile pour des études de statistiques ou autre.</p>
+        </article>
+
+
+
+        <article class="block">
+            <h3 class="tempotitle">-Dans quelles villes la clientèle est-elle la plus importante ? Citer les 3 premières.</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission2/P resultat.png" alt="Image qbe n°3" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission2/P.png" alt="qbe ou sql" class="image-QBE">
+            </div>
+            <p class="description-img">Cette requête peut aider Kdou à savoir quels sont ses clients les plus fidèle.</p>
+        </article>
+    </section>
+
+</body>
+
+<footer>
+    <small>Copyright © 2024 kdou.com. Tous droits réservés.</small>
+</footer>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <title>Rapport</title>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <section class="logo">
+                <a href="accueil.html"><span>K</span>Dou</a>
+            </section>
+            <section class="menu">
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="mission1.html">Mission 1</a></li>
+                    <li><a href="mission2.html">Mission 2</a></li>
+                    <li class="active"><a href="mission3.html">Mission 3</a></li>
+                    <li><a href="Conclusion.html">Conclusion</a></li>
+                </ul>
+            </section>
+        </nav>
+    </header>
+
+    <h1>Mission 3</h1>
+    <h2 class="soustitre"> Contexte:</h2>
+    <p>
+        Dans la mission 3, le but était de découvrir le SQL, un langage de requête, à travers la manipulation de la base de données de Kdou.
+        Dans cette mission, les indicateurs étaient dirigés vers la satisfaction client. On a par exemple cherché les desserts et boissons en
+        lien avec la santé, les produits les moins commandés ou encore les clients qui n'ont pas eu de réduction.
+    </p>
+    
+    <h2 class="soustitre"> Indicateurs:</h2>
+    <section>
+        <article class="block">
+            <h2>Desserts / boissons :</h2>
+            <h3 class="tempotitle">-Combien y a-t-il de produits correspondants vendus 50€? On veut les connaître avec leur pays d'origine.</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission3/1.a.png" alt="Image QBE n°1" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission3/1.a_sql.png" alt="QBE ou SQL" class="image-QBE">
+            </div>
+            
+            <h3 class="tempotitle">- Quels sont les pays en provenance de ces catégories ?</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission3/1.b.png" alt="Image QBE n°2" class="image-QBE">
+            </div>
+
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission3/1.b_sql.png" alt="QBE ou SQL" class="image-QBE">
+            </div>
+        </article>
+
+        <article class="block">
+            <h2>L’offre de KDou :</h2>
+            <h3 class="tempotitle">- Donner des informations sur les fournisseurs qui proposent des produits qui ne sont pas
+                commandés actuellement?</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission3/2.a.png" alt="Image QBE n°3" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission3/2.a_sql.png" alt="QBE ou SQL" class="image-QBE">
+            </div>
+            <p class="description-img"></p>
+
+            <h3 class="tempotitle">- Combien y-a-t-il de produits non commandés par catégorie ?</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <<img src="image/mission3/2.b.png" alt="Image QBE n°4" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission3/2.b_sql.png" alt="QBE ou SQL" class="image-QBE">
+            </div>
+            <p class="description-img"></p>
+        </article>
+
+        <article class="block">
+            <h2>Provenance des produits :</h2>
+            <h3 class="tempotitle">- Pour l'Allemagne pays proche, quels sont les desserts ou boissons vendus à moins de 100 euros ?</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission3/3.a.png" alt="Image QBE n°5" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission3/3.a_sql.png" alt="QBE ou SQL" class="image-QBE">
+            </div>
+
+            <h3 class="tempotitle">- Quels fournisseurs vendent uniquement des boissons ou des desserts ?</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission3/3.b.png" alt="Image QBE n°6" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission3/3.b_sql.png" alt="QBE ou SQL" class="image-QBE">
+            </div>
+        </article>
+
+        <article class="block">
+            <h2>La clientèle :</h2>
+            <h3 class="tempotitle">- Un client nantais Le verre à soi souhaite savoir quels autres clients nantais commandent
+                aussi des produits en Allemagne pour envisager de futures livraisons groupées.</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission3/4.a.png" alt="Image QBE n°7" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission3/4.a_sql.png" alt="QBE ou SQL" class="image-QBE">
+            </div>
+
+            <h3 class="tempotitle">- Certains clients n'ont jamais eu la remise la plus importante de 25%. Qui sont-ils?</h3>
+            <div class="resultat">
+                <p>Résultat</p>
+                <img src="image/mission3/4.b.png" alt="Image QBE n°8" class="image-QBE">
+            </div>
+            <div class="requete">
+                <p>QBE ou sql</p>
+                <img src="image/mission3/4.b_sql.png" alt="QBE ou SQL" class="image-QBE">
+            </div>
+
+        </article>
+
+    </section>
+
+</body>
+
+<footer>
+    <small>Copyright © 2024 kdou.com. Tous droits réservés.</small>
+</footer>
+</html>
